@@ -1,0 +1,534 @@
+/*********** Global ***********/
+body{ font-family: 'Roboto Condensed', sans-serif;}
+
+/*********** Start Header Styling ***********/
+.header{
+    background: url(../imgs/banner.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header .navbar{padding-top: 20px;}
+
+.header .navbar .navbar-nav .nav-link{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.navbar-toggler{
+    background-color: #fff;
+    line-height: 1.5;
+}
+
+.navbar-toggler .navbar-toggler-icon .fa-bars{
+    font-size: 30px;
+    color: #2ba879;
+}
+
+.header .intro .intro-txt{padding-top: 200px;}
+
+.intro .intro-txt .intro-heading{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.intro .intro-txt .intro-paragraph{
+    font-size: 18px;
+    color: #110f0a;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.intro .intro-txt .get-started-btn,
+.intro .intro-txt .contact-us-btn{
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.intro .intro-txt .get-started-btn{
+    background-color: #2ba879;
+    margin-right: 25px;
+}
+
+.intro .intro-txt .contact-us-btn{background-color:#343a40;}
+
+.intro .intro-txt a{ 
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .intro .intro-img .woofer{
+    width: 460px;
+    height: 460px;
+}
+
+.header .search{ margin-top: 25px;}
+
+.header .search .form-control{
+    border-top-left-radius: 30px !important;
+    border-bottom-left-radius: 30px !important;
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header .search .search-btn{
+    border-top-right-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
+    outline: none;
+    border: 0;
+    background-color: #110f0a;
+    color: #fff;
+    padding: 0 25px;
+    letter-spacing: 1px;
+}
+
+@media (max-width:991px){
+
+    .navbar-collapse{
+        background-color: #2ba879;
+        margin-top: -5px;
+        text-align: center;
+    }
+    
+    .navbar-collapse .nav-link{
+        padding: 10px 0 !important;
+        color: #FFF !important;
+        border-bottom: 1px solid #969696;
+        width: 80%;
+        margin: auto;
+    }
+
+    .header .intro .intro-txt{ padding-top: 60px;}
+}
+
+/*********** End Header Styling ***********/
+
+/*********** Start About Styling ***********/
+.about-us{padding: 60px 0;}
+
+.about-us .about-heading{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+.about-us .about-heading span{ color: #2ba879;}
+
+.about-us .lead{
+    font-size: 18px;
+    line-height: 1.6;
+    color: #110f0a;
+}
+
+.about-us .boxes{ margin-top: 50px;}
+
+.about-us .boxes .feature-box{
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 -1px 10px #0000004d;
+    border-radius: 20px;
+}
+
+.about-us .boxes .feature-box.active{background-color: #2ba879;}
+
+.about-us .boxes .feature-box i{
+    font-size: 60px;
+    color: #2ba879;
+}
+
+.about-us .boxes .feature-box h3{
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.about-us .boxes .feature-box p{
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.7;
+}
+
+.about-us .boxes .feature-box.active i,
+.about-us .boxes .feature-box.active h3,
+.about-us .boxes .feature-box.active p{ color: #fff;}
+
+.about-us .boxes .read-more{
+    background-color: #110f0a;
+    border-radius: 8px;
+    padding: 12px 30px;
+    outline: none;
+    border: 0;
+}
+
+.about-us .boxes .read-more a{
+    color: #fff;
+    text-decoration: none;
+}
+
+@media(max-width:576px){
+
+    .about-us .about-heading {font-size: 25px;} 
+}
+
+@media(max-width:767px){
+
+    .about-us .about-heading {font-size: 35px;} 
+}
+
+@media(max-width:1200px){
+    .about-us .boxes .read-more{margin-bottom: 60px;}
+
+    .about-us .boxes .feature{margin: auto;}
+}
+/*********** End About Styling ***********/
+
+/*********** Start Brief Styling ***********/
+.brief{
+    padding: 200px 0;
+    margin-top: 60px;
+    background-color: #2ba879;
+    position: relative;
+}
+
+.brief::before{
+    position: absolute;
+    top: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 110px;
+    background: url(../imgs/about-top-bg.png) top center no-repeat;
+}
+
+.brief::after{
+    position: absolute;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 110px;
+    background: url(../imgs/about-bottom-bg.png) bottom center no-repeat;
+}
+
+.brief .brief-txt{
+    background-color: #fff;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.brief .brief-txt::after{
+    position: absolute;
+    content: "";
+    top: 40%;
+    left: -100px;
+    border: 50px solid;
+    border-color: transparent #fff transparent transparent;
+}
+
+.brief .brief-txt .h1{
+    font-size: 50px;
+    color: #2ba879;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.brief .brief-txt h3{font-size: 20px;}
+
+@media(max-width:767px){
+    .brief .brief-txt .h1{font-size: 25px;}
+}
+
+@media(max-width:991px){
+    .brief{padding: 150px 0;}
+
+    .brief .brief-img{margin-bottom: 50px;}
+
+    .brief .brief-txt::after{border: 0;}
+}
+/*********** End Brief Styling ***********/
+
+/*********** Start Services Styling ***********/
+.services{ padding: 60px 0;}
+
+.services .services-heading{
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+.services .services-heading span{color: #2ba879;}
+
+.services .services-paragraph{
+    font-size: 18px;
+    color: #110f0a;
+    margin-bottom: 80px;
+}
+
+.services .service-inner{
+    border: 1px solid #2ba879;
+    margin: 20px 0;
+    box-shadow: 0 -1px 10px #0000004d;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.services .service-inner img{margin-top: 40px;}
+
+.services .service-inner h3{
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.services .service-inner .lead{
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.7;
+    margin: 20px;
+}
+
+.services .service-inner.active{ background-color: #2ba879;}
+
+.services .service-inner.active h3,
+.services .service-inner.active .lead{ color: #fff;}
+
+.services .read-more{
+    background-color: #110f0a;
+    border-radius: 8px;
+    padding: 12px 30px;
+    outline: none;
+    border: 0;
+    margin-top: 70px;
+}
+
+.services .read-more a{
+    color: #fff;
+    text-decoration: none;
+}
+/*********** End Services Styling ***********/
+
+/*********** Start Contact Styling ***********/
+.contact{padding: 60px 0;}
+
+.contact .h1{
+    text-transform: capitalize;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.contact .lead{
+    font-size: 16px;
+    color: #110f0a;
+    margin-bottom: 80px;
+}
+
+.contact .contact-bg{
+    background: url(../imgs/contact-bg.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+    z-index: 100;
+}
+
+.contact .contact-form{
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 20px;
+}
+
+.contact .contact-form .form-control{
+    background-color: #ececec;
+    margin-bottom: 25px;
+    padding: 20px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 20px;
+}
+
+.contact .contact-form textarea.form-control{ height: 150px;}
+
+.contact .contact-form .btn{
+    background-color: #ce4109;
+    border: 0;
+    width: 150px;
+    height: 45px;
+    padding: 2px 4px;
+    color: #fff;
+    font-size: 20px;
+}
+
+@media(max-width:767px){
+    .contact .h1{font-size: 25px;}
+
+    .contact .contact-form{margin-bottom: 30px;}
+}
+/*********** End Contact Styling ***********/
+
+/*********** Start Footer Styling ***********/
+.footer{
+    padding-top: 60px;
+    background-color: #2c2c2c;
+    margin-top: -120px;
+}
+
+.footer .info{
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 20px;
+    width: 80%;
+    margin: 60px auto 0;
+}
+
+.footer .info span{
+    margin-left: 10px;
+    font-size: 14px;
+    color: #afafaf;
+}
+
+.links-and-products{margin-top: 60px;}
+
+.links-and-products .footer-logo img{ 
+    width: 200px;
+    margin-top: 37%;
+}
+
+.links-and-products .links .h1,
+.links-and-products .products .h1{
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.links-and-products .links,
+.links-and-products .links a,
+.links-and-products .products,
+.links-and-products .products a{ 
+    color: #fff;
+    text-decoration: none;
+}
+
+.links-and-products .links li{margin: 6px 0;}
+
+.links-and-products .products li{
+    display: inline-block;
+    margin: 6px 0;
+    width: 32%;
+}
+
+.links-and-products .links li a:hover,
+.links-and-products .products li a:hover{
+    color: #2ba879;
+    -webkit-transition: color 0.2s ease;
+    -moz-transition: color 0.2s ease;
+    -o-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+}
+
+.links-and-products .products .input-group{ 
+    margin-top: 25px;
+    width: 450px;
+}
+
+.links-and-products .products .form-control{
+    border-top-left-radius: 30px !important;
+    border-bottom-left-radius: 30px !important;
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.links-and-products .products .subscribe-btn{
+    border-top-right-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
+    outline: none;
+    border: 0;
+    background-color: #2ba879;
+    color: #fff;
+    padding: 0 25px;
+    letter-spacing: 1px;
+}
+
+.footer .social-media{margin: 40px 0;}
+
+.footer .social-media ul li{
+    display: inline-block;
+    margin-right: 20px;
+    color: #2ba879;
+    cursor: pointer;
+}
+
+.footer .copy-right{
+    background-color: #2ba879;
+    color: #fff;
+    padding: 25px;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+@media(max-width:576px){
+    .footer .copy-right {font-size:14px;}
+}
+
+@media(max-width:767px){
+    .footer .info{padding: 20px;}
+    .footer .info .mb{ margin-bottom: 10px;}
+
+    .links-and-products .footer-logo img{ margin-bottom: 25px;}
+
+    .links-and-products .products .input-group{max-width: 100%;}
+
+    .links-and-products .products li{width: 45%;}
+}
+
+@media(max-width:1200px){
+    .links-and-products .footer-logo img{ 
+        width: 400px;
+        margin-top: 0;
+    }
+}
+/*********** End Footer Styling ***********/
+
+/*********** Start To Top Btn Styling ***********/
+.to-top-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    padding: 4px;
+    color: #fff;
+    background-color: #2ba879;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    display: none;
+}
+/*********** End To Top Btn Styling ***********/
